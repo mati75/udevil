@@ -1,2 +1,2 @@
 version=3
-https://raw.github.com/IgnorantGuru/$pkgname/master/packages/udevil/udevil-(.*)\.tar\.xz debian uupdate
+https://raw.github.com/IgnorantGuru/udevil/master/packages/(.*)/udevil-(.*)\.tar\.xz debian uupdate
