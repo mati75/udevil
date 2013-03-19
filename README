@@ -1,4 +1,4 @@
-README for udevil v0.4.0
+README for udevil v0.4.1
 
 
 For updates and instructions visit:
@@ -22,7 +22,7 @@ CONTENTS
         systemd Service
     ENABLE KERNEL POLLING
     UNINSTALL
-    TRANSLATIONS
+    TRANSLATE
     LICENSE
 
 
@@ -130,7 +130,7 @@ BUILD NEXT
     cd IgnorantGuru-udevil-*
 
     # Build, & Install
-    ./autogen.sh   # pass desired configure options (if any) here to autogen.sh
+    ./configure
     make
     sudo make install
 
@@ -180,7 +180,7 @@ POST INSTALL
     ------------------
 
     By default, /etc/udevil/udevil.conf is set to allow only local fileystems
-    to be mounted, with mounting of networks and ISO files disallowed.  To
+    and ISO files to be mounted, with mounting of networks disallowed.  To
     allow networks and files to be mounted, in /etc/udevil/udevil.conf set:
 
         allowed_types = $KNOWN_FILESYSTEMS, file, cifs, nfs, curlftpfs, sshfs, davfs
@@ -252,7 +252,7 @@ ENABLE KERNEL POLLING
     To use kernel polling, your Linux kernel may need to be 2.6.38 or newer,
     and udev may need to be version 173 or newer.
 
-    TO DETERIME IF KERNEL POLLING IS ENABLED, run these commands:
+    TO DETERMINE IF KERNEL POLLING IS ENABLED, run these commands:
 
         cat /sys/module/block/parameters/events_dfl_poll_msecs
         cat /sys/block/sr0/events_poll_msecs
@@ -305,10 +305,16 @@ UNINSTALL
         # Note: /etc/udevil/ is not automatically removed
 
 
-TRANSLATIONS
+TRANSLATE
 
-    Adding or updating a translation of udevil doesn't require any special
-    tools, just a text editor.  For instructions, see the TRANSLATE file.
+    To help translate udevil please visit:
+        https://github.com/IgnorantGuru/spacefm/wiki/Translate
+    
+    At Transifex:
+        https://www.transifex.com/projects/p/udevil/
+
+    Just sign up for a free Transifex account.  For instructions visit:
+        http://help.transifex.com/intro/translating.html#translating
 
 
 LICENSE
