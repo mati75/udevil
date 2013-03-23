@@ -1,0 +1,54 @@
+.TH devmon "1" "March 2013"
+.SH NAME
+devmon \- Automounts and unmounts optical and removable drives
+.SH SYNOPSIS
+.B devmon [AUTOMOUNT-OPTIONS]  # Run as daemon to automount
+.B devmon [MOUNT-OPTIONS]      # Or run as client to manually un/mount
+.SH DESCRIPTION
+\fBdevmon\fP - Automounts and unmounts optical and removable drives
+.SH USAGE
+.TP
+AUTOMOUNT-OPTIONS:  (these can be used only in daemon mode)
+--exec-on-device DEVICE "COMMAND"  Execute COMMAND after mounting DEVICE
+--exec-on-label "LABEL" "COMMAND"  Execute COMMAND after mounting LABEL
+--exec-on-video "COMMAND"          Execute COMMAND after video DVD mount
+--exec-on-audio "COMMAND"          Execute COMMAND after audio CD insertion
+--exec-on-disc  "COMMAND"          Execute COMMAND after data CD/DVD mount
+--exec-on-drive "COMMAND"          Execute COMMAND after drive mount
+--exec-on-unmount "COMMAND"        Execute COMMAND after unmount
+--exec-on-remove  "COMMAND"        Execute COMMAND after drive removal
+  Where the following in COMMAND will be replaced with:
+     %d    mount point directory (eg /media/cd)
+     %f    device name (eg /dev/sdd1)
+     %l    label of mounted volume
+  Multiple --exec-on-XXX options may be used to execute multiple commands.
+  Other exec-on-XXX commands are ignored if exec-on-device or -label executed.
+--mount-options "OPTIONS"          Default: noexec,nosuid,nodev,noatime
+--info-on-mount                    Show mounted drive info in a popup dialog
+--no-mount                         Don't mount anything, just exec (disables
+                                   --exec-on-video)
+--no-unmount                       Don't unmount all removable drives on exit
+.TP
+MOUNT-OPTIONS:  (these can be used only in client mode)
+--unmount-removable | -r      Sync and unmount all removable drives and show
+                              pop-up dialog (spacefm or zenity required)
+--unmount-recent | -c         Unmount most recently mounted removable drive
+--unmount-optical | -o        Unmount all optical drives (error pop-up only)
+--unmount-all | -u            Same as --unmount-removable --unmount-optical
+--unmount DIR|DEVICE          Unmount DEVICE or mount point DIR
+--eject DIR|DEVICE            Unmount and eject DEVICE or mount point DIR
+--mount-all | -a              Mount all removable and optical drives
+--mount DEVICE                Mount DEVICE
+--mount-options|--mount-fstype|--eject-options "OPTIONS"
+                              These options will be passed to mount or eject
+.TP
+--ignore-device DEVICE        Ignore DEVICE (eg /dev/sdd1)
+--ignore-label "LABEL"        Ignore volume with LABEL
+--sync | -s                   Add sync mount option for ext2-4 ntfs ufs, or
+                              flush for fat & vfat (slower writing but safer)
+--internal                    Also attempt to un/mount internal system drives
+                              (this is mostly a fix for esata issues)
+--no-gui | -g                 Do not show spacefm/zenity pop-up dialogs
+.SH AUTHOR
+This manual page was written by Mateusz Łukasik <mati75@linuxmint.pl>,
+for the Debian GNU/Linux system (but may be used by others).
