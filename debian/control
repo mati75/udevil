@@ -18,6 +18,6 @@ Conflicts: devmon
 Provides: devmon
 Description: udevil - alternative storage media interface
  Mounts and unmounts removable devices and networks without a
- password (set suid), shows device info, monitors device changes.
- Includes the devmon automounting script.
+  password (set suid), shows device info, monitors device changes.
+  Includes the devmon automounting script.
 

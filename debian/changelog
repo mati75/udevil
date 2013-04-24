@@ -1,5 +1,5 @@
 udevil (0.4.1-1) unstable; urgency=low
 
-  * Initial release. (Closes: #691812)
+  * Initial release. (Closes: #691812, #703399)
 
- -- Mateusz Łukasik <mati75@linuxmint.pl>  Sat, 23 Mar 2013 13:43:41 +0100
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Wed, 24 Apr 2013 11:06:31 +0200
