@@ -4,6 +4,7 @@ udevil (0.4.3-1) UNRELEASED; urgency=medium
   * Update debian/copyright.
   * debian/control:
     + build only on Linux.
+  * Add lintian-overrides file.
 
  -- Mateusz Łukasik <mati75@linuxmint.pl>  Sat, 25 Jan 2014 17:01:49 +0100
 
