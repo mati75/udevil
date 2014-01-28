@@ -15,6 +15,29 @@ Copyright: 2008 David Zeuthen <david@fubar.dk>
 	   2012 IgnorantGuru <ignorantguru@gmx.com>
 License: GPL-3+
 
+Files: po/Makefile.in.in
+Copyright: 1995-1997 Ulrich Drepper <drepper@gnu.ai.mit.edu>
+           2004-2008 Rodney Dawes <dobey.pwns@gmail.com>
+License: permissive
+ This file may be copied and used freely without restrictions. It may
+ be used in projects which are not available under a GNU General Public License,
+ but which still want to provide support for the GNU gettext functionality.
+
+Files: Makefile.in
+       etc/Makefile.in
+       man/Makefile.in
+       src/Makefile.in
+Copyright: 1994-2013 Free Software Foundation, Inc.
+License: permissive
+ This Makefile.in is free software; the Free Software Foundation
+ gives unlimited permission to copy and/or distribute it,
+ with or without modifications, as long as this notice is preserved.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY, to the extent permitted by law; without
+ even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+ PARTICULAR PURPOSE.
+
 Files: debian/*
 Copyright: 2013-2014 Mateusz Łukasik <mati75@linuxmint.pl>
 License: GPL-3+
