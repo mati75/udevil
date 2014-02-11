@@ -1,12 +1,12 @@
-udevil (0.4.3-1) UNRELEASED; urgency=medium
+udevil (0.4.3-1) unstable; urgency=medium
 
   * New upstream release.
   * Update debian/copyright.
   * debian/control:
     + build only on Linux.
-  * Add lintian-overrides file.
+  * Update manpage file: debian/udevil.1.
 
- -- Mateusz Łukasik <mati75@linuxmint.pl>  Sat, 25 Jan 2014 17:01:49 +0100
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Sat, 01 Feb 2014 10:30:34 +0100
 
 udevil (0.4.1-1) unstable; urgency=low
 

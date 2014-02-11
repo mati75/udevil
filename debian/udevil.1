@@ -35,7 +35,7 @@ script.
 .TP
 .B udevil umount /dev/sdd1
 .B udevil umount /media/disk
-.B udevil umount -l /media/disk
+.B udevil umount \-l /media/disk
 .B udevil umount /tmp/example.iso
 .TP
 .B udevil info /dev/sdd1
@@ -64,9 +64,9 @@ minimal output
 .B udevil umount|unmount|-\-unmount|-\-umount [UNMOUNT-OPTIONS] 
 .B {[\-b|-\-block-device] DEVICE}|DIR
 .B UNMOUNT-OPTIONS:
-.B \-\l
+.B \-l
 lazy unmount (see man umount)
-.B \-\f 
+.B \-f 
 force unmount (see man umount)
 .B \-\-no-user-interaction
 ignored (for compatibility)
@@ -74,14 +74,14 @@ ignored (for compatibility)
 .B INFO  \-  Show information about DEVICE emulating udisks v1 output:
 .B udevil info|-\-show-info|-\-info [-b|-\-block-device] DEVICE
 .TP
-.B MONITOR  -  Display device events emulating udisks v1 output:
+.B MONITOR  \-  Display device events emulating udisks v1 output:
 udevil monitor|\-\-monitor
 .TP
-.B CLEAN  -  Remove unmounted udevil-created mount dirs in media dirs
+.B CLEAN  \-  Remove unmounted udevil-created mount dirs in media dirs
 .B udevil clean
 .TP
 HELP  -  Show this help
-.B udevil help|--help|-h
+.B udevil help|\-\-help|\-h
 .SH AUTHOR
 This manual page was written by Mateusz Łukasik <mati75@linuxmint.pl>,
 for the Debian GNU/Linux system (but may be used by others).
