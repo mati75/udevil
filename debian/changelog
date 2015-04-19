@@ -4,6 +4,8 @@ udevil (0.4.3-2) UNRELEASED; urgency=medium
     directory: (Closes: #782875)
     + debian/rules: Add run dh-systemd.
     + debian/control: Add dh-systemd to Build-Depends.
+  * debian/control:
+    + Bump Standards-Version to 3.9.6. (no changes needed)
 
  -- Mateusz Łukasik <mati75@linuxmint.pl>  Sun, 19 Apr 2015 20:44:27 +0200
 
