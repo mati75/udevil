@@ -4,7 +4,7 @@ udevil \- alternative storage media interface
 .SH SYNOPSIS
 .B udevil [OPTIONS] COMMAND [COMMAND-OPTIONS] [COMMAND-ARGUMENTS]
 .SH DESCRIPTION
-\fBudevil\fP - alternative storage media interface 
+\fBudevil\fP - alternative storage media interface
 udevil mounts and unmounts removable devices and network shares
 without requiring password (set suid), shows device information
 and monitors device changes. It includes the devmon automounting
@@ -45,7 +45,7 @@ script.
 .B udevil clean
 .TP
 .SH OPTIONS
-.B \-\-verbose 
+.B \-\-verbose
 print details
 .B \-\-quiet
 minimal output
@@ -54,19 +54,19 @@ minimal output
 .B MOUNT  \-  Mounts DEVICE to mount point DIR with MOUNT\-OPTIONS:
 .B udevil mount|--mount [MOUNT-OPTIONS] [[\-b|-\-block-device] DEVICE] [DIR]
 .B MOUNT\-OPTIONS:
-.B \-\t|-\-types|-\-filesystem-type|-\-mount-fstype TYPE 
+.B \-\t|-\-types|-\-filesystem-type|-\-mount-fstype TYPE
 (see man mount)
-.B \-o|-\-options|-\-mount\-options OPT,... 
+.B \-o|-\-options|-\-mount\-options OPT,...
 (see man mount)
-.B \-\-no\-user\-interaction  ignored 
+.B \-\-no\-user\-interaction  ignored
 (for compatibility)
 .TP
-.B udevil umount|unmount|-\-unmount|-\-umount [UNMOUNT-OPTIONS] 
+.B udevil umount|unmount|-\-unmount|-\-umount [UNMOUNT-OPTIONS]
 .B {[\-b|-\-block-device] DEVICE}|DIR
 .B UNMOUNT-OPTIONS:
 .B \-l
 lazy unmount (see man umount)
-.B \-f 
+.B \-f
 force unmount (see man umount)
 .B \-\-no-user-interaction
 ignored (for compatibility)

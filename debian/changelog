@@ -8,6 +8,7 @@ udevil (0.4.3-2) UNRELEASED; urgency=medium
     + Bump Standards-Version to 3.9.6. (no changes needed)
   * Drop debian/source/options -- no longer needed.
   * debian/rules: Remove no needed lines.
+  * Convert debian/udevil.1 and debian/devmon.1 to UTF-8. (Closes: #740076)
 
  -- Mateusz Łukasik <mati75@linuxmint.pl>  Sun, 19 Apr 2015 20:44:27 +0200
 

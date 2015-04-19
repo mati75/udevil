@@ -41,8 +41,9 @@ Don't mount anything, just exec (disables -\-exec\-on\-video)
 Don't unmount all removable drives on exit
 .TP
 .B MOUNT-OPTIONS:  (these can be used only in client mode)
-.B \-\-unmount-removable, \-r      
-Sync and unmount all removable drives and show pop-up dialog (spacefm or zenity required)
+.B \-\-unmount-removable, \-r
+Sync and unmount all removable drives and show pop-up dialog
+(spacefm or zenity required)
 .B \-\-unmount-recent, \-c
 Unmount most recently mounted removable drive
 .B \-\-unmount-optical, \-o
@@ -65,9 +66,11 @@ Ignore DEVICE (eg /dev/sdd1)
 .B \-\-ignore-label "LABEL"
 Ignore volume with LABEL
 .B \-\-sync, \-s
-Add sync mount option for ext2-4 ntfs ufs, or flush for fat & vfat (slower writing but safer)
+Add sync mount option for ext2-4 ntfs ufs, or flush for fat
+& vfat (slower writing but safer)
 .B \-\-internal
-Also attempt to un/mount internal system drives (this is mostly a fix for esata issues)
+Also attempt to un/mount internal system drives
+(this is mostly a fix for esata issues)
 .B \-\-no-gui, \-g
 Do not show spacefm/zenity pop-up dialogs
 .SH AUTHOR
