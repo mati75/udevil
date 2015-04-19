@@ -6,6 +6,7 @@ udevil (0.4.3-2) UNRELEASED; urgency=medium
     + debian/control: Add dh-systemd to Build-Depends.
   * debian/control:
     + Bump Standards-Version to 3.9.6. (no changes needed)
+  * Drop debian/source/options -- no longer needed.
 
  -- Mateusz Łukasik <mati75@linuxmint.pl>  Sun, 19 Apr 2015 20:44:27 +0200
 
