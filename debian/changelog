@@ -1,4 +1,4 @@
-udevil (0.4.3-1+deb8u1) stable-security; urgency=medium
+udevil (0.4.3-2) UNRELEASED; urgency=medium
 
   * Fix systemd devmon@.service template unit file shipped in wrong
     directory: (Closes: #782875)
