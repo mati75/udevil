@@ -9,8 +9,11 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
+# The etc/Makefile should not install systemd units, dh will
+export ADD_SYSTEMD=0
+
 %:
-	dh $@ 
+	dh $@ --with systemd
 
 override_dh_installman:
 	dh_installman debian/devmon.1

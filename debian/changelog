@@ -1,3 +1,12 @@
+udevil (0.4.3-1+deb8u1) stable-security; urgency=medium
+
+  * Fix systemd devmon@.service template unit file shipped in wrong
+    directory: (Closes: #782875)
+    + debian/rules: Add run dh-systemd.
+    + debian/control: Add dh-systemd to Build-Depends.
+
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Sun, 19 Apr 2015 20:44:27 +0200
+
 udevil (0.4.3-1) unstable; urgency=medium
 
   * New upstream release.
