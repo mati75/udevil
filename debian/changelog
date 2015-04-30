@@ -12,6 +12,7 @@ udevil (0.4.3+git20150428-1) UNRELEASED; urgency=medium
   * debian/rules: Remove no needed lines.
   * Convert debian/udevil.1 and debian/devmon.1 to UTF-8. (Closes: #740076)
   * Update debian/watch.
+  * Add debian/patches/fix-spelling-error.patch for like the patch name says.
 
  -- Mateusz Łukasik <mati75@linuxmint.pl>  Sun, 19 Apr 2015 20:44:27 +0200
 
