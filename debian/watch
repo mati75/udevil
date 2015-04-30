@@ -1,0 +1,3 @@
+version=3
+opts=filenamemangle=s/.+\/v?(\d\S*)\.tar\.gz/udevil-$1\.tar\.gz/ \
+  https://github.com/IgnorantGuru/udevil/tags .*/v?(\d\S*)\.tar\.gz

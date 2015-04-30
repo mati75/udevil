@@ -1,0 +1,87 @@
+.TH udevil "1" "March 2013"
+.SH NAME
+udevil \- alternative storage media interface
+.SH SYNOPSIS
+.B udevil [OPTIONS] COMMAND [COMMAND-OPTIONS] [COMMAND-ARGUMENTS]
+.SH DESCRIPTION
+\fBudevil\fP - alternative storage media interface
+udevil mounts and unmounts removable devices and network shares
+without requiring password (set suid), shows device information
+and monitors device changes. It includes the devmon automounting
+script.
+.SH EXAMPLES
+.B udevil mount /dev/sdd1
+.B udevil mount -o ro,noatime /dev/sdd1
+.B udevil mount -o ro,noatime /dev/sdd1 /media/custom
+.B udevil mount /tmp/example.iso  # ISO file
+.B udevil mount ftp://sys.domain  # ftp site \- requires curlftpfs or ftpfs
+.B udevil mount ftp://user:pass@sys.domain/share # ftp share with user and password
+.B udevil mount ftp://user:pass@sys.domain:21/share # ftp share with port, user and password
+.B udevil mount -t ftpfs sys.domain  # ftp site with ftpfs
+.B udevil mount -t curlftpfs sys.domain # ftp site with curl
+.B udevil mount -t curlftpfs user:pass@sys.domain # ftp site with curl u/p
+.B udevil mount nfs://sys.domain:/share # nfs share
+.B udevil mount sys.domain:/share # nfs share
+.B udevil mount smb://sys.domain/share  # samba share w/ cifs
+.B udevil mount smb://user:pass@10.0.0.1:50/share # samba share w/ u/p/port
+.B udevil mount smb://WORKGROUP/user@sys.domain  # samba share w/ workgroup
+.B udevil mount //sys.domain/share # samba share w/ cifs
+.B udevil mount //sys.domain/share -t smbfs # samba share w/ smbfs
+.B udevil mount ssh://user@sys.domain # sshfs with user \- requires sshfs
+.B udevil mount -t sshfs user@sys.domain # sshfs with user
+.B udevil mount http://sys.domain/dav/  # WebDAV \- requires davfs2
+.B udevil mount tmpfs # make a ram drive
+.B WARNING !!! a password on the command line is UNSAFE - see filesystem docs
+.TP
+.B udevil umount /dev/sdd1
+.B udevil umount /media/disk
+.B udevil umount \-l /media/disk
+.B udevil umount /tmp/example.iso
+.TP
+.B udevil info /dev/sdd1
+.TP
+.B udevil monitor
+.TP
+.B udevil clean
+.TP
+.SH OPTIONS
+.B \-\-verbose
+print details
+.B \-\-quiet
+minimal output
+.SH USAGE
+.TP
+.B MOUNT  \-  Mounts DEVICE to mount point DIR with MOUNT\-OPTIONS:
+.B udevil mount|--mount [MOUNT-OPTIONS] [[\-b|-\-block-device] DEVICE] [DIR]
+.B MOUNT\-OPTIONS:
+.B \-\t|-\-types|-\-filesystem-type|-\-mount-fstype TYPE
+(see man mount)
+.B \-o|-\-options|-\-mount\-options OPT,...
+(see man mount)
+.B \-\-no\-user\-interaction  ignored
+(for compatibility)
+.TP
+.B udevil umount|unmount|-\-unmount|-\-umount [UNMOUNT-OPTIONS]
+.B {[\-b|-\-block-device] DEVICE}|DIR
+.B UNMOUNT-OPTIONS:
+.B \-l
+lazy unmount (see man umount)
+.B \-f
+force unmount (see man umount)
+.B \-\-no-user-interaction
+ignored (for compatibility)
+.TP
+.B INFO  \-  Show information about DEVICE emulating udisks v1 output:
+.B udevil info|-\-show-info|-\-info [-b|-\-block-device] DEVICE
+.TP
+.B MONITOR  \-  Display device events emulating udisks v1 output:
+udevil monitor|\-\-monitor
+.TP
+.B CLEAN  \-  Remove unmounted udevil-created mount dirs in media dirs
+.B udevil clean
+.TP
+HELP  -  Show this help
+.B udevil help|\-\-help|\-h
+.SH AUTHOR
+This manual page was written by Mateusz Łukasik <mati75@linuxmint.pl>,
+for the Debian GNU/Linux system (but may be used by others).
