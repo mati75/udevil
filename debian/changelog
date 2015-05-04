@@ -1,7 +1,6 @@
-udevil (0.4.3+git20150428-1) unstable; urgency=medium
+udevil (0.4.4-1) UNRELEASED; urgency=medium
 
-  * Merged lastest upstream snapshot from "next" git branch.
-    (Closes: #778831, #744925, #750509)
+  * New upstream release. (Closes: #778831, #744925, #750509)
   * Fix systemd devmon@.service template unit file shipped in wrong
     directory: (Closes: #782875)
     + debian/rules: Add run dh-systemd.
