@@ -12,7 +12,7 @@ Vcs-Browser: https://github.com/mati75/udevil.git
 Package: udevil
 Architecture: linux-any
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Recommends: udisks | udisks2, zenity, pmount
+Recommends: udisks2, zenity, pmount
 Suggests: eject, cifs-utils, curlftpfs, sshfs
 Conflicts: devmon
 Provides: devmon

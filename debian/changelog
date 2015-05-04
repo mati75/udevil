@@ -1,4 +1,4 @@
-udevil (0.4.3+git20150428-1) UNRELEASED; urgency=medium
+udevil (0.4.3+git20150428-1) unstable; urgency=medium
 
   * Merged lastest upstream snapshot from "next" git branch.
     (Closes: #778831, #744925, #750509)
@@ -8,13 +8,14 @@ udevil (0.4.3+git20150428-1) UNRELEASED; urgency=medium
     + debian/control: Add dh-systemd to Build-Depends.
   * debian/control:
     + Bump Standards-Version to 3.9.6. (no changes needed)
+    + Remove udisks from Recommends -- no longer supported.
   * Drop debian/source/options -- no longer needed.
   * debian/rules: Remove no needed lines.
   * Convert debian/udevil.1 and debian/devmon.1 to UTF-8. (Closes: #740076)
   * Update debian/watch.
   * Add debian/patches/fix-spelling-error.patch for like the patch name says.
 
- -- Mateusz Łukasik <mati75@linuxmint.pl>  Sun, 19 Apr 2015 20:44:27 +0200
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Thu, 30 Apr 2015 16:03:11 +0200
 
 udevil (0.4.3-1) unstable; urgency=medium
 
