@@ -1,4 +1,4 @@
-udevil (0.4.4-1) UNRELEASED; urgency=medium
+udevil (0.4.4-1) unstable; urgency=medium
 
   * New upstream release. (Closes: #778831, #744925, #750509)
   * Fix systemd devmon@.service template unit file shipped in wrong
@@ -13,8 +13,9 @@ udevil (0.4.4-1) UNRELEASED; urgency=medium
   * Convert debian/udevil.1 and debian/devmon.1 to UTF-8. (Closes: #740076)
   * Update debian/watch.
   * Add debian/patches/fix-spelling-error.patch for like the patch name says.
+  * Add debian/patches/device-info-sys-stat.patch to fix FTBFS with gcc-5.
 
- -- Mateusz Łukasik <mati75@linuxmint.pl>  Thu, 30 Apr 2015 16:03:11 +0200
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Tue, 07 Jul 2015 09:55:14 +0200
 
 udevil (0.4.3-1) unstable; urgency=medium
 
