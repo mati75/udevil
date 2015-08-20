@@ -1,8 +1,8 @@
 udevil (0.4.4-1) unstable; urgency=medium
 
   * New upstream release. (Closes: #778831, #744925, #750509)
-  * Fix systemd devmon@.service template unit file shipped in wrong
-    directory: (Closes: #782875)
+  * Fix systemd devmon@.service template unit file being shipped
+    in the wrong directory: (Closes: #782875)
     + debian/rules: Add run dh-systemd.
     + debian/control: Add dh-systemd to Build-Depends.
   * debian/control:
@@ -14,8 +14,9 @@ udevil (0.4.4-1) unstable; urgency=medium
   * Update debian/watch.
   * Add debian/patches/fix-spelling-error.patch for like the patch name says.
   * Add debian/patches/device-info-sys-stat.patch to fix FTBFS with gcc-5.
+    (Closes: #790630)
 
- -- Mateusz Łukasik <mati75@linuxmint.pl>  Tue, 07 Jul 2015 09:55:14 +0200
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Wed, 15 Jul 2015 18:34:16 +0200
 
 udevil (0.4.3-1) unstable; urgency=medium
 
