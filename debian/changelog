@@ -1,3 +1,9 @@
+udevil (0.4.4-1~bpo8+1) jessie-backports; urgency=medium
+
+  * Rebuild for jessie-backports.
+
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Sat, 05 Sep 2015 19:27:32 +0200
+
 udevil (0.4.4-1) unstable; urgency=medium
 
   * New upstream release. (Closes: #778831, #744925, #750509)
