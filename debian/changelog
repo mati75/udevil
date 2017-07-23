@@ -3,6 +3,7 @@ udevil (0.4.4-2) UNRELEASED; urgency=medium
   * Fix manpage. (Closes: #840842 LP: #1614419)
   * debian/control:
     + Clean Recommends field. (Closes: #869143)
+    + Bump dh version to 10.
 
  -- Mateusz Łukasik <mati75@linuxmint.pl>  Sun, 23 Jul 2017 17:34:21 +0200
 
