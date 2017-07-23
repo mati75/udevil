@@ -1,3 +1,9 @@
+udevil (0.4.4-2) UNRELEASED; urgency=medium
+
+  * Fix manpage. (Closes: #840842 LP: #1614419)
+
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Sun, 23 Jul 2017 17:34:21 +0200
+
 udevil (0.4.4-1) unstable; urgency=medium
 
   * New upstream release. (Closes: #778831, #744925, #750509)
