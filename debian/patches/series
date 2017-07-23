@@ -5,4 +5,5 @@ device-info-sys-stat.patch
 925fd6659fb7448ec96585bbf448c2e970b5ff04.patch
 83b1254c2f1d778577324a341d43b83aca129822.patch
 d73166c9f88d72a897aceb442311acf51aa24750.patch
+422d8ddc9ca10e1c9b5e415676a73554f19eed1f.patch
 raspberrypi_config.patch

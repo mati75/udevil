@@ -1,0 +1,18 @@
+From 422d8ddc9ca10e1c9b5e415676a73554f19eed1f Mon Sep 17 00:00:00 2001
+From: Michael Heap <m@michaelheap.com>
+Date: Wed, 16 Dec 2015 16:45:06 +0000
+Subject: [PATCH] New: Added ability to run under a user's systemd session
+
+---
+ etc/systemd/devmon@.service | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/etc/systemd/devmon@.service b/etc/systemd/devmon@.service
+index 23ccf87..37e36f8 100644
+--- a/etc/systemd/devmon@.service
++++ b/etc/systemd/devmon@.service
+@@ -11,3 +11,4 @@ ExecStart=/usr/bin/devmon $ARGS
+ 
+ [Install]
+ WantedBy=multi-user.target
++WantedBy=default.target
