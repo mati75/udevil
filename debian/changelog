@@ -6,6 +6,15 @@ udevil (0.4.4-2) UNRELEASED; urgency=medium
     + Bump dh version to 10.
     + Use secured links.
     + Bump Standards-Version to 4.0.0. (no changes needed)
+  * Add cherry picks from uptream:
+    + add --always-exec option for exec during startup/--mount-all
+    + fix misspelling priviledges
+    + Fix "implicit declaration of function stat" 
+    + fix cannot mount iso file within iso file
+    + update lang pt_BR fr ru sv de it pl es 
+  * debian/patches:
+    + Drop fix-spelling-error.patch match more changes included in cherry
+    pick.
 
  -- Mateusz Łukasik <mati75@linuxmint.pl>  Sun, 23 Jul 2017 17:34:21 +0200
 

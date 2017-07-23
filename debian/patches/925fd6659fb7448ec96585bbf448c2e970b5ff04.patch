@@ -1,0 +1,26 @@
+From 925fd6659fb7448ec96585bbf448c2e970b5ff04 Mon Sep 17 00:00:00 2001
+From: Julian Ospald <hasufell@posteo.de>
+Date: Tue, 24 May 2016 23:04:21 +0200
+Subject: [PATCH] Fix "implicit declaration of function stat"
+
+This only appears on some system, but the provided include
+seems to fix it.
+
+See https://galileo.mailstation.de/jenkins/job/medvid/62/console
+for the build failure log.
+---
+ src/device-info.h | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/src/device-info.h b/src/device-info.h
+index 6cb3683..101ff9d 100644
+--- a/src/device-info.h
++++ b/src/device-info.h
+@@ -14,6 +14,7 @@
+ #include <libudev.h>
+ #include <fcntl.h>
+ #include <errno.h>
++#include <sys/stat.h>
+ 
+ // intltool
+ #include <glib/gi18n.h>

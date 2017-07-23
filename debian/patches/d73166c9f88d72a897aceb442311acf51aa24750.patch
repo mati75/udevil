@@ -1,0 +1,277 @@
+From d73166c9f88d72a897aceb442311acf51aa24750 Mon Sep 17 00:00:00 2001
+From: IgnorantGuru <ignorantguru@openmailbox.org>
+Date: Sat, 25 Mar 2017 06:18:35 -0600
+Subject: [PATCH] update lang pt_BR fr ru sv de it pl es
+
+---
+ po/de.po    |  2 +-
+ po/es.po    |  4 ++--
+ po/fr.po    |  2 +-
+ po/it.po    |  4 ++--
+ po/pl.po    |  4 ++--
+ po/pt_BR.po | 16 ++++++++--------
+ po/ru.po    | 18 +++++++++---------
+ po/sv.po    | 10 +++++-----
+ 8 files changed, 30 insertions(+), 30 deletions(-)
+
+diff --git a/po/de.po b/po/de.po
+index 505774d..adc1fbc 100644
+--- a/po/de.po
++++ b/po/de.po
+@@ -11,7 +11,7 @@ msgstr ""
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2015-10-16 15:19+0000\n"
+ "PO-Revision-Date: 2015-10-16 15:21+0000\n"
+-"Last-Translator: IgnorantGuru <ignorantguru@gmx.com>\n"
++"Last-Translator: IgnorantGuru <ignorantguru@openmailbox.org>\n"
+ "Language-Team: German (http://www.transifex.com/ignorantguru/udevil/language/de/)\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+diff --git a/po/es.po b/po/es.po
+index b589b22..f80ef6d 100644
+--- a/po/es.po
++++ b/po/es.po
+@@ -3,7 +3,7 @@
+ # package.
+ # 
+ # Translators:
+-# Adolfo Jayme Barrientos, 2013
++# Adolfo Jayme-Barrientos, 2013
+ # Dorian Hawkmoon <dorian.cadenas@gmail.com>, 2013
+ msgid ""
+ msgstr ""
+@@ -11,7 +11,7 @@ msgstr ""
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2015-10-16 15:19+0000\n"
+ "PO-Revision-Date: 2015-10-16 15:21+0000\n"
+-"Last-Translator: IgnorantGuru <ignorantguru@gmx.com>\n"
++"Last-Translator: IgnorantGuru <ignorantguru@openmailbox.org>\n"
+ "Language-Team: Spanish (http://www.transifex.com/ignorantguru/udevil/language/es/)\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+diff --git a/po/fr.po b/po/fr.po
+index a54fbcd..5a78208 100644
+--- a/po/fr.po
++++ b/po/fr.po
+@@ -11,7 +11,7 @@ msgstr ""
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2015-10-16 15:19+0000\n"
+ "PO-Revision-Date: 2015-10-16 15:21+0000\n"
+-"Last-Translator: IgnorantGuru <ignorantguru@gmx.com>\n"
++"Last-Translator: IgnorantGuru <ignorantguru@openmailbox.org>\n"
+ "Language-Team: French (http://www.transifex.com/ignorantguru/udevil/language/fr/)\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+diff --git a/po/it.po b/po/it.po
+index ebe277d..57b0100 100644
+--- a/po/it.po
++++ b/po/it.po
+@@ -3,7 +3,7 @@
+ # package.
+ # 
+ # Translators:
+-# IgnorantGuru <ignorantguru@gmx.com>, 2013
++# IgnorantGuru <ignorantguru@openmailbox.org>, 2013
+ # Matteo Bernardini <matteo.bernardini@gmail.com>, 2013
+ # wandows <pressaperfeicao@yahoo.com.br>, 2013
+ # wandows <pressaperfeicao@yahoo.com.br>, 2013
+@@ -13,7 +13,7 @@ msgstr ""
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2015-10-16 15:19+0000\n"
+ "PO-Revision-Date: 2015-10-16 15:21+0000\n"
+-"Last-Translator: IgnorantGuru <ignorantguru@gmx.com>\n"
++"Last-Translator: IgnorantGuru <ignorantguru@openmailbox.org>\n"
+ "Language-Team: Italian (http://www.transifex.com/ignorantguru/udevil/language/it/)\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+diff --git a/po/pl.po b/po/pl.po
+index a8589b8..fecb276 100644
+--- a/po/pl.po
++++ b/po/pl.po
+@@ -11,13 +11,13 @@ msgstr ""
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2015-10-16 15:19+0000\n"
+ "PO-Revision-Date: 2015-10-16 15:21+0000\n"
+-"Last-Translator: IgnorantGuru <ignorantguru@gmx.com>\n"
++"Last-Translator: IgnorantGuru <ignorantguru@openmailbox.org>\n"
+ "Language-Team: Polish (http://www.transifex.com/ignorantguru/udevil/language/pl/)\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+ "Language: pl\n"
+-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
++"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>=14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+ 
+ #: ../src/udevil.c:616
+ #, c-format
+diff --git a/po/pt_BR.po b/po/pt_BR.po
+index 3200b9a..bfebed1 100644
+--- a/po/pt_BR.po
++++ b/po/pt_BR.po
+@@ -6,7 +6,7 @@
+ # wandows <pressaperfeicao@yahoo.com.br>, 2013
+ # wandows <pressaperfeicao@yahoo.com.br>, 2013
+ # wandows <pressaperfeicao@yahoo.com.br>, 2013
+-# wandows <pressaperfeicao@yahoo.com.br>, 2014-2015
++# wandows <pressaperfeicao@yahoo.com.br>, 2014-2016
+ # wandows <pressaperfeicao@yahoo.com.br>, 2013
+ # wandows <pressaperfeicao@yahoo.com.br>, 2013
+ msgid ""
+@@ -14,8 +14,8 @@ msgstr ""
+ "Project-Id-Version: udevil\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2015-10-16 15:19+0000\n"
+-"PO-Revision-Date: 2015-10-16 15:21+0000\n"
+-"Last-Translator: IgnorantGuru <ignorantguru@gmx.com>\n"
++"PO-Revision-Date: 2016-08-31 16:20+0000\n"
++"Last-Translator: wandows <pressaperfeicao@yahoo.com.br>\n"
+ "Language-Team: Portuguese (Brazil) (http://www.transifex.com/ignorantguru/udevil/language/pt_BR/)\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+@@ -27,7 +27,7 @@ msgstr ""
+ #, c-format
+ msgid ""
+ "udevil: error 1: unable to drop privileges - please report this problem\n"
+-msgstr ""
++msgstr "udevil: erro 1: Não é possível desconectar privilégios - informe este problema\n"
+ 
+ #: ../src/udevil.c:810
+ #, c-format
+@@ -981,11 +981,11 @@ msgstr "    OPÇÕES DE DESMONTAGENS:\n"
+ 
+ #: ../src/udevil.c:4983 ../src/udevil.c:4995
+ msgid "lazy unmount (see man umount)"
+-msgstr "desmontagem lenta (ver man umount)"
++msgstr "desmontagem lenta (veja: man umount)"
+ 
+ #: ../src/udevil.c:4984 ../src/udevil.c:4996
+ msgid "force unmount (see man umount)"
+-msgstr "forçar desmontagem (ver man umount)"
++msgstr "forçar desmontagem (veja: man umount)"
+ 
+ #: ../src/udevil.c:4991
+ #, c-format
+@@ -1026,12 +1026,12 @@ msgstr "    udevil info|--show-info|--info [-b|--block-device] DISPOSITIVO\n"
+ #: ../src/udevil.c:5003
+ #, c-format
+ msgid "MONITOR  -  Display device events emulating udisks v1 output:\n"
+-msgstr "MONITORAR  -  Mostra eventos dos dispositivos emulando udisks v1 saída\n"
++msgstr "MONITOR  -  Mostra eventos dos dispositivos emulando udisks v1 saída\n"
+ 
+ #: ../src/udevil.c:5006
+ #, c-format
+ msgid "CLEAN  -  Remove unmounted udevil-created mount dirs in media dirs\n"
+-msgstr "CLEAN  -  Remove pastas criadas por udevil desmontado as pastas de mídia\n"
++msgstr "CLEAN  -  Remove as pastas criadas por udevil desmontando as pastas de mídia\n"
+ 
+ #: ../src/udevil.c:5008
+ #, c-format
+diff --git a/po/ru.po b/po/ru.po
+index d395ef1..4d0af8c 100644
+--- a/po/ru.po
++++ b/po/ru.po
+@@ -6,7 +6,7 @@
+ # wandows <pressaperfeicao@yahoo.com.br>, 2013
+ # wandows <pressaperfeicao@yahoo.com.br>, 2013
+ # Vladimir Kudrya <vladimir-csp@yandex.ru>, 2012
+-# Vladimir Kudrya <vladimir-csp@yandex.ru>, 2012
++# Vladimir Kudrya <vladimir-csp@yandex.ru>, 2012,2016
+ # irk.translator <irk.translator@gmail.com>, 2012
+ # Vladimir Lomov <irk.translator@yandex.ru>, 2012-2013
+ msgid ""
+@@ -14,8 +14,8 @@ msgstr ""
+ "Project-Id-Version: udevil\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2015-10-16 15:19+0000\n"
+-"PO-Revision-Date: 2015-10-16 15:21+0000\n"
+-"Last-Translator: IgnorantGuru <ignorantguru@gmx.com>\n"
++"PO-Revision-Date: 2016-02-14 10:57+0000\n"
++"Last-Translator: Vladimir Kudrya <vladimir-csp@yandex.ru>\n"
+ "Language-Team: Russian (http://www.transifex.com/ignorantguru/udevil/language/ru/)\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+@@ -27,7 +27,7 @@ msgstr ""
+ #, c-format
+ msgid ""
+ "udevil: error 1: unable to drop privileges - please report this problem\n"
+-msgstr ""
++msgstr "udevil: ошибка 1: невозможно сбросить привилегии - сообщите об этой проблеме разработчику\n"
+ 
+ #: ../src/udevil.c:810
+ #, c-format
+@@ -57,7 +57,7 @@ msgstr "udevil: ошибка 6: %s строка %d повторяющийся п
+ #: ../src/udevil.c:904
+ #, c-format
+ msgid "udevil: warning 7: cannot read config file %s\n"
+-msgstr ""
++msgstr "udevil: предупреждение 7: невозможно прочитать конфигурационный файл %s\n"
+ 
+ #: ../src/udevil.c:916
+ #, c-format
+@@ -72,12 +72,12 @@ msgstr "udevil: ошибка 8: ошибка записи в файл журна
+ #: ../src/udevil.c:1233
+ #, c-format
+ msgid "udevil: warning 124: invalid use of /** suffix in pattern '%s'\n"
+-msgstr ""
++msgstr "udevil: предупреждение 124: некорректное использование суффикса /** в шаблоне '%s'\n"
+ 
+ #: ../src/udevil.c:1236
+ #, c-format
+ msgid "udevil: warning 125: ** wildcard not allowed in %s\n"
+-msgstr ""
++msgstr "udevil: предупреждение 125: групповой символ ** недопустим в %s\n"
+ 
+ #: ../src/udevil.c:1534 ../src/udevil.c:1576 ../src/udevil.c:1638
+ #: ../src/udevil.c:1681
+@@ -207,7 +207,7 @@ msgstr "udevil: предупреждение 24: невозможно выпол
+ msgid ""
+ "udevil: warning 25: setfacl on %s failed, falling back to 'user:root "
+ "rwx------'\n"
+-msgstr ""
++msgstr "udevil: предупреждение 25: выполнение setfacl на %s неуспешно, откат к применению прав 'user:root rwx------'\n"
+ 
+ #: ../src/udevil.c:2491
+ #, c-format
+@@ -1040,7 +1040,7 @@ msgstr "HELP  —  показать эту справку\n"
+ 
+ #: ../src/udevil.c:5013
+ msgid "For config see"
+-msgstr ""
++msgstr "См. конфигурацию в"
+ 
+ #: ../src/udevil.c:5015
+ #, c-format
+diff --git a/po/sv.po b/po/sv.po
+index 4109f94..78fe494 100644
+--- a/po/sv.po
++++ b/po/sv.po
+@@ -3,16 +3,16 @@
+ # package.
+ # 
+ # Translators:
+-# IgnorantGuru <ignorantguru@gmx.com>, 2013
+-# IgnorantGuru <ignorantguru@gmx.com>, 2013
++# IgnorantGuru <ignorantguru@openmailbox.org>, 2013
++# IgnorantGuru <ignorantguru@openmailbox.org>, 2013
+ # Ingemar Karlsson <ingemar@ingk.se>, 2013,2015
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: udevil\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2015-10-16 15:19+0000\n"
+-"PO-Revision-Date: 2015-10-16 15:21+0000\n"
+-"Last-Translator: IgnorantGuru <ignorantguru@gmx.com>\n"
++"PO-Revision-Date: 2015-10-16 16:37+0000\n"
++"Last-Translator: Ingemar Karlsson <ingemar@ingk.se>\n"
+ "Language-Team: Swedish (http://www.transifex.com/ignorantguru/udevil/language/sv/)\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+@@ -24,7 +24,7 @@ msgstr ""
+ #, c-format
+ msgid ""
+ "udevil: error 1: unable to drop privileges - please report this problem\n"
+-msgstr ""
++msgstr "udevil: error 1: det går inte att släppa privilegier - var vänlig rapportera detta problem\n"
+ 
+ #: ../src/udevil.c:810
+ #, c-format

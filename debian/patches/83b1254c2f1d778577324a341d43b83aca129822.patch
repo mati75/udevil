@@ -1,0 +1,22 @@
+From 83b1254c2f1d778577324a341d43b83aca129822 Mon Sep 17 00:00:00 2001
+From: IgnorantGuru <ignorantguru@openmailbox.org>
+Date: Sat, 25 Mar 2017 06:14:49 -0600
+Subject: [PATCH] fix cannot mount iso file within iso file #62
+
+---
+ src/udevil.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/udevil.c b/src/udevil.c
+index ab4f5c1..9d95d88 100644
+--- a/src/udevil.c
++++ b/src/udevil.c
+@@ -3517,7 +3517,7 @@ static int command_mount( CommandData* data )
+                 }
+                 // test for race conditions
+                 restore_privileges();
+-                fd = open( data->device_file, O_RDWR );
++                fd = open( data->device_file, O_RDONLY );
+                 drop_privileges( 0 );
+                 if ( fd == -1 )
+                 {
