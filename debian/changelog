@@ -15,6 +15,7 @@ udevil (0.4.4-2) UNRELEASED; urgency=medium
   * debian/patches:
     + Drop fix-spelling-error.patch match more changes included in cherry
     pick.
+  * Update debian/copyright.
 
  -- Mateusz Łukasik <mati75@linuxmint.pl>  Sun, 23 Jul 2017 17:34:21 +0200
 
