@@ -3,7 +3,7 @@ Upstream-Name: udevil
 Source: https://github.com/IgnorantGuru/udevil/tree/master/packages/
 
 Files: *
-Copyright: 2013 IgnorantGuru <ignorantguru@gmx.com>
+Copyright: 2015 IgnorantGuru <ignorantguru@openmailbox.org>
 License: GPL-3+
 
 Files: src/canonicalize.*
@@ -12,7 +12,7 @@ License: LGPL-2+
 
 Files: src/device-info.*
 Copyright: 2008 David Zeuthen <david@fubar.dk>
-	   2012 IgnorantGuru <ignorantguru@gmx.com>
+	   2012 IgnorantGuru <ignorantguru@openmailbox.org>
 License: GPL-3+
 
 Files: po/Makefile.in.in
