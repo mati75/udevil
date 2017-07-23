@@ -4,22 +4,6 @@ Date: Fri, 16 Oct 2015 09:03:30 -0600
 Subject: [PATCH] add --always-exec option for exec during startup/--mount-all
  #48
 
----
- ChangeLog  |  1 +
- src/devmon | 34 ++++++++++++++++++++++++++--------
- 2 files changed, 27 insertions(+), 8 deletions(-)
-
-diff --git a/ChangeLog b/ChangeLog
-index cb396f5..033cc0b 100644
---- a/ChangeLog
-+++ b/ChangeLog
-@@ -1,5 +1,6 @@
- 0.4.4+
-     include sys/stat.h in device-info.h for gcc 5.x #59
-+    add --always-exec option for exec during startup/--mount-all #48
- 0.4.4   2015-05-04:
-     udevil.conf new default/allowed options for exfat #52
-     [devmon 1.1.8] fix no error popup on --unmount-removable #42
 diff --git a/src/devmon b/src/devmon
 index bcdcda4..fe5946f 100755
 --- a/src/devmon
