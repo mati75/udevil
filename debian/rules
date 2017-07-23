@@ -3,6 +3,9 @@
 # The etc/Makefile should not install systemd units, dh will
 export ADD_SYSTEMD=0
 
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+
 %:
 	dh $@ --with systemd
 
