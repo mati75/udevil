@@ -2,12 +2,17 @@
 
 # The etc/Makefile should not install systemd units, dh will
 export ADD_SYSTEMD=0
-
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
+DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
 %:
 	dh $@ --with systemd
+
+override_dh_auto_install:
+	dh_auto_install
+	mv debian/udevil/usr/lib/$(DEB_HOST_MULTIARCH)/systemd/system/devmon@.service debian/udevil/lib/systemd/system/
+	rm -rf debian/udevil/usr/lib
 
 override_dh_installman:
 	dh_installman debian/devmon.1
