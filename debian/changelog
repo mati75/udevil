@@ -1,3 +1,9 @@
+udevil (0.4.4-3) UNRELEASED; urgency=medium
+
+  * Use secure copyright file specification URI.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Wed, 03 Oct 2018 02:23:59 +0100
+
 udevil (0.4.4-2) unstable; urgency=medium
 
   * Fix manpage. (Closes: #840842 LP: #1614419)
