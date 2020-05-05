@@ -3,7 +3,7 @@ Section: utils
 Priority: optional
 Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
 Build-Depends: debhelper (>= 10), libglib2.0-dev,
- intltool, libudev-dev, dh-systemd (>= 1.5)
+ intltool, libudev-dev
 Standards-Version: 4.0.0
 Homepage: https://ignorantguru.github.com/udevil/
 Vcs-Git: https://github.com/mati75/udevil.git
