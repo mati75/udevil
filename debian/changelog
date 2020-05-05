@@ -5,6 +5,8 @@ udevil (0.4.4-3) UNRELEASED; urgency=medium
   * debian/copyright: use spaces rather than tabs to start continuation
     lines.
   * Depend on newer debhelper (>= 9.20160709) rather than dh-systemd.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
 
  -- Debian Janitor <janitor@jelmer.uk>  Tue, 05 May 2020 11:23:02 +0000
 
