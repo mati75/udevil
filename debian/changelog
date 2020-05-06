@@ -1,3 +1,16 @@
+udevil (0.4.4-3) UNRELEASED; urgency=medium
+
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * debian/copyright: use spaces rather than tabs to start continuation
+    lines.
+  * Depend on newer debhelper (>= 9.20160709) rather than dh-systemd.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Drop unnecessary dh arguments: --with=systemd
+
+ -- Debian Janitor <janitor@jelmer.uk>  Tue, 05 May 2020 11:23:02 +0000
+
 udevil (0.4.4-2) unstable; urgency=medium
 
   * Fix manpage. (Closes: #840842 LP: #1614419)
@@ -18,7 +31,7 @@ udevil (0.4.4-2) unstable; urgency=medium
     + Add raspberrypi_config.patch -- Merge Raspberry Pi config changes.
     They are more specific for Debian.
   * Update debian/copyright.
-  * debian/rules: 
+  * debian/rules:
     + Enable hardening.
     + Install devmon@.service in correct place. (Closes: #799745)
 

@@ -1,4 +1,4 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: udevil
 Source: https://github.com/IgnorantGuru/udevil/tree/master/packages/
 
@@ -12,7 +12,7 @@ License: LGPL-2+
 
 Files: src/device-info.*
 Copyright: 2008 David Zeuthen <david@fubar.dk>
-	   2012 IgnorantGuru <ignorantguru@openmailbox.org>
+           2012 IgnorantGuru <ignorantguru@openmailbox.org>
 License: GPL-3+
 
 Files: po/Makefile.in.in
