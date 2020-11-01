@@ -13,6 +13,7 @@ udevil (0.4.4-3) UNRELEASED; urgency=medium
 
   [ Mateusz Łukasik ]
   * Bump dh version to 13 and drop compat file.
+  * Bump Standards-Version to 4.5.0. (no changes needed)
 
  -- Debian Janitor <janitor@jelmer.uk>  Tue, 05 May 2020 11:23:02 +0000
 
