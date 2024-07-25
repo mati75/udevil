@@ -1,3 +1,17 @@
+udevil (0.4.4-3.2) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Stop installing empty directory in aliased location. (Closes: #1073669)
+
+ -- Chris Hofstaedtler <zeha@debian.org>  Thu, 25 Jul 2024 15:04:36 +0200
+
+udevil (0.4.4-3.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Install systemd units into /usr/lib. (Closes: #1073669)
+
+ -- Chris Hofstaedtler <zeha@debian.org>  Mon, 08 Jul 2024 00:19:42 +0200
+
 udevil (0.4.4-3) unstable; urgency=medium
 
   [ Debian Janitor ]

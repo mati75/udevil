@@ -11,8 +11,8 @@ DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
 override_dh_auto_install:
 	dh_auto_install
-	mv debian/udevil/usr/lib/$(DEB_HOST_MULTIARCH)/systemd/system/devmon@.service debian/udevil/lib/systemd/system/
-	rm -rf debian/udevil/usr/lib
+	mv debian/udevil/usr/lib/$(DEB_HOST_MULTIARCH)/systemd/ debian/udevil/usr/lib/
+	rmdir debian/udevil/usr/lib/$(DEB_HOST_MULTIARCH)
 
 override_dh_installman:
 	dh_installman debian/devmon.1
