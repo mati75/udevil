@@ -6,6 +6,7 @@ udevil (0.4.4-4) unstable; urgency=medium
 
   [ Mateusz Łukasik ]
   * Bump to 4.7.0. (no changes needed)
+  * Update dates in d/copyright.
 
  -- Niels Thykier <niels@thykier.net>  Sat, 28 Dec 2024 12:33:46 +0000
 
