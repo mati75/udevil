@@ -1,8 +1,11 @@
-udevil (0.4.4-3.3) unstable; urgency=medium
+udevil (0.4.4-4) unstable; urgency=medium
 
-  * Non-maintainer upload.
+  [ Niels Thykier ]
   * Declare explicit need for root when building udevil.
     (Closes: #1089460)
+
+  [ Mateusz Łukasik ]
+  * Bump to 4.7.0. (no changes needed)
 
  -- Niels Thykier <niels@thykier.net>  Sat, 28 Dec 2024 12:33:46 +0000
 
