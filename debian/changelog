@@ -1,3 +1,9 @@
+udevil (0.4.4-5) UNRELEASED; urgency=medium
+
+  * Add patch for fix mount exfat. (Closes: #968924)
+
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Wed, 30 Apr 2025 21:22:48 +0200
+
 udevil (0.4.4-4) unstable; urgency=medium
 
   [ Niels Thykier ]
