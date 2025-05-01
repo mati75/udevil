@@ -1,6 +1,7 @@
 udevil (0.4.4-5) UNRELEASED; urgency=medium
 
   * Add patch for fix mount exfat. (Closes: #968924)
+  * Add patch for fix FTBFS with gcc-15. (Closes: #1098028)
 
  -- Mateusz Łukasik <mati75@linuxmint.pl>  Wed, 30 Apr 2025 21:22:48 +0200
 

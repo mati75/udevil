@@ -1,0 +1,27 @@
+Description: Fix FTBFS with gcc-15
+Author: Mateusz Łukasik <mati75@linuxmint.pl>
+Bug-Debian: https://bugs.debian.org/1098028
+
+Forwarded: no
+Last-Update: 2025-04-30
+
+--- a/src/udevil.c
++++ b/src/udevil.c
+@@ -4795,7 +4795,7 @@ static int command_info( CommandData* da
+     return ret;
+ }
+ 
+-void command_monitor_finalize()
++void command_monitor_finalize(int)
+ {
+     //if (signal == SIGINT || signal == SIGTERM)
+     //printf( "\nudevil: SIGINT || SIGTERM\n");
+@@ -4913,7 +4913,7 @@ finish_:
+     return 1;
+ }
+ 
+-void command_interrupt()
++void command_interrupt(int)
+ {
+     if ( udev )
+     {
